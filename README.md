@@ -2,6 +2,11 @@
 
 This is my website where I'll be posting my projects. I'll be including project descriptions and pictures.
 
+## Table of Contents
+1. [Musical Tesla Coil](#Musical-Tesla-Coil)
+2. [Chess Robot](#Chess-Robot)
+3. [Magnetic Levitator](#Magnetic-Levitator)
+
 ### Musical Tesla Coil
 
 This was a project I worked on for around 5 months between May and October of 2019. The goal was to design and construct a tesla coil capable of arcing to the environment while playing music. The design is a single resonant solid state tesla coil consisting of a machine wound coil and a top load made from aluminum wire wrapped around a 3D printed shell. It has a resonant frequency of around 160KHz and is capable of generating upwards of 1 million volts from a 30 volt DC supply. The music was then played by interrupting the output of the coil at the frequency of the music, this was accomplished by an op-amp with adjustable gain feeding in to a comparator with a 160KHz sawtooth wave. That output then fed into a MOSFET driver, then into 2 MOSFETs that drove the coil (2 MOSFETs in parallel to improve power dissipation).
@@ -22,7 +27,17 @@ Second was the audio input which was amplified using an op-amp with adjustable g
 
 Third and last, the audio signal was then compared to the sawtooth wave and if the audio signal was higher than the sawtooth, the output would be higher. The output was then fed into the driving circuit, which was composed of a MOSFET driver and 2 MOSFETs in parallel. Originally it was planned as 4 MOSFETs but I had broken a few by driving the circuit too hard so I had only 2 left when I finally got the final tuning and coil, it seemed to work fine so I didn't end up populating the last 2.
 
-![Schematic](https://i.imgur.com/nG1ddvY.png)
+![power-supply](https://i.imgur.com/86xqMX5.jpg)
+The power supply section of the circuit
+
+![signal-generation](https://imgur.com/zRidB0V)
+Overall signal generation
+
+![MOSFETs](https://i.imgur.com/nlQZIMD.png)
+MOSFETs
+
+![Schematic](https://i.imgur.com/zRidB0V.png)
+Overall schematic - it's kind of hard to see unless you open it in a new tab.
 
 In the process of constructing this project I wound 3 secondary coils, with the first 2 by hand. After the 2nd iteration I realized that hand-wound coils would be too imperfect for this so I put together a jig from an old fixture and a DC motor. This produced the nice coil in the final project.
 
