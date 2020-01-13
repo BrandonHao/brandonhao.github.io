@@ -2,7 +2,7 @@
 
 This is my website where I'll be posting my projects. I'll be including project descriptions and pictures.
 
-### Table of Contents
+### Table of Contents {:toc}
 1. [Musical Tesla Coil](#Musical-Tesla-Coil)
 2. [Chess Robot](#Chess-Robot)
 3. [Magnetic Levitator](#Magnetic-Levitator)
