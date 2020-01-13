@@ -6,7 +6,7 @@ This is my website where I'll be posting my projects. I'll be including project 
 
 This was a project I worked on for around 5 months between May and October of 2019. The goal was to design and construct a tesla coil capable of arcing to the environment while playing music. The design is a single resonant solid state tesla coil consisting of a machine wound coil and a top load made from aluminum wire wrapped around a 3D printed shell. It has a resonant frequency of around 160KHz and is capable of generating upwards of 1 million volts from a 30 volt DC supply. The circuit and PCB layout were designed by myself in Altium.
 
-![TC1](https://drive.google.com/uc?id=1DWEHZktFV1PP6Gm3PRFRRhUwwlew-YS3) ![TC2](https://drive.google.com/uc?id=1DIeyop-6uRt399StIafPkjq_IDcjSDOI) 
+![TC1](https://drive.google.com/uc?id=1DWEHZktFV1PP6Gm3PRFRRhUwwlew-YS3) ![TC2](https://i.imgur.com/BC3Oqpc.jpg) 
 
 In the process of constructing this project I wound 3 secondary coils, with the first 2 by hand. After the 2nd iteration I realized that hand-wound coils would be too imperfect for this so I put together a jig from an old fixture and a DC motor. This produced the nice coil in the final project
 
