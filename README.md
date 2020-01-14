@@ -4,8 +4,8 @@ This is my website where I'll be posting my projects. I'll be including project 
 
 ### Table of Contents 
 1. [Musical Tesla Coil](#Musical-Tesla-Coil)
-2. [Chess Robot](#Chess-Robot)
-3. [Magnetic Levitator](#Magnetic-Levitator)
+2. [Magnetic Levitator](#Magnetic-Levitator)
+3. [Chess Robot](#Chess-Robot)
 
 ### Musical Tesla Coil <a name="Musical-Tesla-Coil"></a>
 
@@ -16,6 +16,9 @@ The Tesla Coil driven off of a 30 volt supply arcing to the environment. The EMF
 
 ![TC2](https://i.imgur.com/BC3Oqpc.jpg) 
 The Tesla Coil driven at around 60 volt arcing to a screwdriver I was holding.
+
+![assembly](https://i.imgur.com/3kMVPvn.jpg)
+Stuffed PCB.
 
 The circuit and PCB layout were designed by myself in Altium. It consists mainly of 3 parts. 
 
@@ -30,22 +33,48 @@ Third and last, the audio signal was then compared to the sawtooth wave and if t
 ![power-supply](https://i.imgur.com/86xqMX5.jpg)
 The power supply section of the circuit
 
-![signal-generation](https://imgur.com/zRidB0V)
+![signal-generation](https://imgur.com/zRidB0V.png)
 Overall signal generation
 
 ![MOSFETs](https://i.imgur.com/nlQZIMD.png)
 MOSFETs
 
-![Schematic](https://i.imgur.com/zRidB0V.png)
+![Schematic](https://i.imgur.com/nG1ddvY.png)
 Overall schematic - it's kind of hard to see unless you open it in a new tab.
 
 In the process of constructing this project I wound 3 secondary coils, with the first 2 by hand. After the 2nd iteration I realized that hand-wound coils would be too imperfect for this so I put together a jig from an old fixture and a DC motor. This produced the nice coil in the final project.
 
 ![Coil-Winder](https://i.imgur.com/XCHzVIW.jpg)
 
-### Chess Robot <a name="Chess-Robot"></a>
+## Magnetic Levitator <a name="Magnetic-Levitator"></a>
+The magnetic levitator was a project with the goal of levitating a magnetic load in the air using an electromagnet. The physical design is pretty simple, consisting of an electromagnetic with a Hall Effect Sensor on an arm mounted to a box that contained all the electronics. The principle behind the levitator was to use the Hall Effect Sensor to detect the distance between the load and the electromagnet, then to turn on the coil if it was too far, or turn it off if it was too close.
+
+![ML2](https://i.imgur.com/yU6a6Bv.jpg)
+Levitation during testing
+
+![ML1](https://i.imgur.com/0BQRLdp.jpg)
+Final assembly
+
+![PCB](https://i.imgur.com/IQi91on.png)
+PCB Layout of the circuit
+
+To accomplish this there were 3 main parts of the circuit. The first part of the circuit was the Hall Effect Sensor (HES). The HES gave a very small reading at the distance that was ideal for the magnet, so it was necessary to have a very high gain without losing too much of the resolution. Therefore, I used a multi-stage op-amp circuit to bring the levels of the sensor to the level required and used a trim part to fine tune. This signal was then fed into a comparator with the square wave.
+
+![HES](https://i.imgur.com/IFBvauV.png)
+HES and amplification
+
+The second part used a 555 timer to create a square wave. This square wave then was buffered before before being fed into a comparator with the amplified HES readings. This was to create the oscillation required to turn on and off the coil. 
+![timer](https://i.imgur.com/JGlnTNS.png)
+The 555 timer circuit.
+
+## Chess Robot <a name="Chess-Robot"></a>
 
 I designed and created this robot as part of a team of 3. It was constructed using LEGO Mindstorm Robotics parts for the mechanical setup. The robot mechanically consists of a pick and place claw on a carriage that allowed it to access any piece on the board. The robot was controlled using an external app through Bluetooth. The app would take a picture of the board, analyse it using OpenCV, run the board-state through a home-rolled machine learning algorthim, then send the best calculated move to the NXT brick through Bluetooth which would then move the piece accordingly.
 
-## Magnetic Levitator <a name="Magnetic-Levitator"></a>
+Code located here: https://github.com/David-D-White/Cheebo
 
+![claw](https://i.imgur.com/a1LSJmj.jpg)
+Image of the claw used to pick up and move pieces.
+
+![Carriage](https://i.imgur.com/ymT2ajp.jpg)
+The mechanical assembly.
