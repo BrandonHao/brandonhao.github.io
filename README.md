@@ -46,7 +46,7 @@ In the process of constructing this project I wound 3 secondary coils, with the 
 
 ![Coil-Winder](https://i.imgur.com/XCHzVIW.jpg)
 
-## Magnetic Levitator <a name="Magnetic-Levitator"></a>
+### Magnetic Levitator <a name="Magnetic-Levitator"></a>
 The magnetic levitator was a project with the goal of levitating a magnetic load in the air using an electromagnet. The physical design is pretty simple, consisting of an electromagnetic with a Hall Effect Sensor on an arm mounted to a box that contained all the electronics. The principle behind the levitator was to use the Hall Effect Sensor to detect the distance between the load and the electromagnet, then to turn on the coil if it was too far, or turn it off if it was too close.
 
 ![ML2](https://i.imgur.com/yU6a6Bv.jpg)
@@ -67,7 +67,7 @@ The second part used a 555 timer to create a square wave. This square wave then 
 ![timer](https://i.imgur.com/JGlnTNS.png)
 The 555 timer circuit.
 
-## Chess Robot <a name="Chess-Robot"></a>
+### Chess Robot <a name="Chess-Robot"></a>
 
 I designed and created this robot as part of a team of 3. It was constructed using LEGO Mindstorm Robotics parts for the mechanical setup. The robot mechanically consists of a pick and place claw on a carriage that allowed it to access any piece on the board. The robot was controlled using an external app through Bluetooth. The app would take a picture of the board, analyse it using OpenCV, run the board-state through a home-rolled machine learning algorthim, then send the best calculated move to the NXT brick through Bluetooth which would then move the piece accordingly.
 
