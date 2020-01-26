@@ -52,6 +52,8 @@ In the process of constructing this project I wound 3 secondary coils, with the 
 ### Magnetic Levitator (OCT - DEC 2017)<a name="Magnetic-Levitator"></a>
 The magnetic levitator was a project with the goal of levitating a magnetic load in the air using an electromagnet. The physical design is pretty simple, consisting of an electromagnetic with a Hall Effect Sensor on an arm mounted to a box that contained all the electronics. The principle behind the levitator was to use the Hall Effect Sensor to detect the distance between the load and the electromagnet, then to turn on the coil if it was too far, or turn it off if it was too close.
 
+[Magnetic Levitation](https://youtu.be/bTHeGbCzi04)
+
 ![ML2](https://i.imgur.com/yU6a6Bv.jpg)
 Levitation during testing
 
