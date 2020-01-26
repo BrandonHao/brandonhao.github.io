@@ -11,6 +11,8 @@ This is my website where I'll be posting my projects. I'll be including project 
 
 This was a project I worked on for around 5 months between May and October of 2019. The goal was to design and construct a tesla coil capable of arcing to the environment while playing music. The design is a single resonant solid state tesla coil consisting of a machine wound coil and a top load made from aluminum wire wrapped around a 3D printed shell. It has a resonant frequency of around 160KHz and is capable of generating upwards of 1 million volts from a 30 volt DC supply. The music was then played by interrupting the output of the coil at the frequency of the music, this was accomplished by an op-amp with adjustable gain feeding in to a comparator with a 160KHz sawtooth wave. That output then fed into a MOSFET driver, then into 2 MOSFETs that drove the coil (2 MOSFETs in parallel to improve power dissipation). For this project I also designed a simple step-down transformer circuit to drive the coil at a higher voltage than what my bench supply could provide. This was designed to run at around 60VDC since I was worried than a rectified mains voltage of 170VDC would damage my MOSFETs.
 
+[Clip of the Coil Playing All Star by Smash Mouth](https://youtu.be/T439xnFz8j0)
+
 ![TC1](https://i.imgur.com/PmnCNT1.jpg)
 The Tesla Coil driven off of a 30 volt supply arcing to the environment. The EMF was so intense while the coil was on that my phone touchscreen would bug out completely if it was brought anywhere close so the pictures are somewhat blurry.
 
