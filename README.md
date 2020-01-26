@@ -7,7 +7,7 @@ This is my website where I'll be posting my projects. I'll be including project 
 2. [Magnetic Levitator](#Magnetic-Levitator)
 3. [Chess Robot](#Chess-Robot)
 
-### Musical Tesla Coil MAY - OCT 2019<a name="Musical-Tesla-Coil"></a>
+### Musical Tesla Coil (MAY - OCT 2019)<a name="Musical-Tesla-Coil"></a>
 
 This was a project I worked on for around 5 months between May and October of 2019. The goal was to design and construct a tesla coil capable of arcing to the environment while playing music. The design is a single resonant solid state tesla coil consisting of a machine wound coil and a top load made from aluminum wire wrapped around a 3D printed shell. It has a resonant frequency of around 160KHz and is capable of generating upwards of 1 million volts from a 30 volt DC supply. The music was then played by interrupting the output of the coil at the frequency of the music, this was accomplished by an op-amp with adjustable gain feeding in to a comparator with a 160KHz sawtooth wave. That output then fed into a MOSFET driver, then into 2 MOSFETs that drove the coil (2 MOSFETs in parallel to improve power dissipation). For this project I also designed a simple step-down transformer circuit to drive the coil at a higher voltage than what my bench supply could provide. This was designed to run at around 60VDC since I was worried than a rectified mains voltage of 170VDC would damage my MOSFETs.
 
@@ -49,7 +49,7 @@ In the process of constructing this project I wound 3 secondary coils, with the 
 
 ![Coil-Winder](https://i.imgur.com/XCHzVIW.jpg)
 
-### Magnetic Levitator OCT - DEC 2017<a name="Magnetic-Levitator"></a>
+### Magnetic Levitator (OCT - DEC 2017)<a name="Magnetic-Levitator"></a>
 The magnetic levitator was a project with the goal of levitating a magnetic load in the air using an electromagnet. The physical design is pretty simple, consisting of an electromagnetic with a Hall Effect Sensor on an arm mounted to a box that contained all the electronics. The principle behind the levitator was to use the Hall Effect Sensor to detect the distance between the load and the electromagnet, then to turn on the coil if it was too far, or turn it off if it was too close.
 
 ![ML2](https://i.imgur.com/yU6a6Bv.jpg)
@@ -70,7 +70,7 @@ The second part used a 555 timer to create a square wave. This square wave then 
 ![timer](https://i.imgur.com/JGlnTNS.png)
 The 555 timer circuit.
 
-### Chess Robot NOV - DEC 2018<a name="Chess-Robot"></a>
+### Chess Robot (NOV - DEC 2018)<a name="Chess-Robot"></a>
 
 I designed and created this robot as part of a team of 3. It was constructed using LEGO Mindstorm Robotics parts for the mechanical setup. The robot mechanically consists of a pick and place claw on a carriage that allowed it to access any piece on the board. The robot was controlled using an external app through Bluetooth. The app would take a picture of the board, analyse it using OpenCV, run the board-state through a home-rolled machine learning algorthim, then send the best calculated move to the NXT brick through Bluetooth which would then move the piece accordingly.
 
